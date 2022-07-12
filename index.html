@@ -436,24 +436,89 @@
 
       </div>
 
+      <div class="footer-form">
+         <form  name="footer-form" autocomplete="on" novalidate>
+            <label class="footer-form-sign" for="footer-form-sign">Подпишитесь на рассылку</label>
+            <input class="footer-form-input" type="text"
+             id="footer-form-sign" 
+             name="footer-form-sign"
+             placeholder="E-mail">
+         <button class="form-footer-button" type="submit">Отправить
+            <svg class="icon-send">
+               <use href="./img/sprite.svg#icon-send"></use>
+            </svg>
+         </button>
+        
+         </form>
+      </div>
+
+      
+      
+
+     
    </div>
    </footer>
 
 <!-- Modal -->
-
    <div class="backdrop is-hidden" data-modal >
-   
-   <div class="modal">
-      <button type="button" class="close-link" data-modal-close >
-         <svg class="close-icon">
-            <use href="./img/sprite.svg#icon-close"></use>
-         </svg>
-
-      </button>  
+      
+      <div class="modal">
+         <button type="button" class="close-link" data-modal-close >
+            <svg class="close-icon">
+               <use href="./img/sprite.svg#icon-close"></use>
+            </svg>
+         </button> 
+         <div class="modal-inner">
+            <h2 class="modal-title">Оставьте свои данные, мы вам перезвоним</h2>
+            <form class="form" name="main-form" autocomplete="on" novalidate>
+              <div class="form-field">
+               <label class="form-name-label" for="user-name">Имя</label>
+               <div  class="form-field-inner">
+                  <input class="form-input" id="user-name" type="text" name="user-name" >
+                  <svg class="form-field-svg" aria-hidden="true">
+                     <use href="./img/sprite.svg#icon-person-black">
+                     </use>
+                  </svg>
+               </div>
+              </div>
+              <div class="form-field">
+               <label class="form-name-label" for="user-phone">Телефон</label>
+               <div class="form-field-inner">
+                  <input class="form-input" id="user-phone" type="tel" name="user-phone" >
+                  <svg class="form-field-svg" aria-hidden="true">
+                     <use href="./img/sprite.svg#icon-phone-black">
+                     </use>
+                  </svg>
+               </div>
+              </div>
+              <div class="form-field">
+               <label class="form-name-label" for="user-mail">Почта</label>
+               <div class="form-field-inner">
+                  <input class="form-input" id="user-mail" type="email" name="user-mail">
+                  <svg class="form-field-svg" aria-hidden="true">
+                     <use href="./img/sprite.svg#icon-email-black">
+                     </use>
+                  </svg>
+               </div>
+              </div>
+              <div class="form-field">
+               <label class="form-name-label" for="user-comment">Комментарий</label>
+               <textarea class="form-input form-input-textarea" 
+               name="user-comment" id="user-comment"
+               rows="10" placeholder="Введите текст"></textarea>
+             </div>
+             <div class="form-field">
+               <input id="term-condition" type="checkbox" name="term-condition">
+               <label class="form-term-condition" for="term-condition">Соглашаюсь с рассылкой и принимаю  <a href="" class="term-contract">Условия договора</a> </label>
+             </div>
+              <button class="form-field-button" type="submit">Отправить</button>
+            </form>
+         </div> 
+         
+      </div>
    </div>
-</div>
 
-<script src="./js/modal.js"></script>
+   <script src="./js/modal.js"></script>
 </body>
 </html>
 
