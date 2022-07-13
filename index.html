@@ -474,7 +474,8 @@
               <div class="form-field">
                <label class="form-name-label" for="user-name">Имя</label>
                <div  class="form-field-inner">
-                  <input class="form-input" id="user-name" type="text" name="user-name" >
+                  <input class="form-input" id="user-name" type="text" 
+                  name="user-name" placeholder=" ">
                   <svg class="form-field-svg" aria-hidden="true">
                      <use href="./img/sprite.svg#icon-person-black">
                      </use>
@@ -484,7 +485,8 @@
               <div class="form-field">
                <label class="form-name-label" for="user-phone">Телефон</label>
                <div class="form-field-inner">
-                  <input class="form-input" id="user-phone" type="tel" name="user-phone" >
+                  <input class="form-input" id="user-phone" type="tel"
+                   name="user-phone" placeholder=" ">
                   <svg class="form-field-svg" aria-hidden="true">
                      <use href="./img/sprite.svg#icon-phone-black">
                      </use>
@@ -494,7 +496,8 @@
               <div class="form-field">
                <label class="form-name-label" for="user-mail">Почта</label>
                <div class="form-field-inner">
-                  <input class="form-input" id="user-mail" type="email" name="user-mail">
+                  <input class="form-input" id="user-mail" type="email"
+                   name="user-mail" placeholder=" ">
                   <svg class="form-field-svg" aria-hidden="true">
                      <use href="./img/sprite.svg#icon-email-black">
                      </use>
@@ -507,11 +510,19 @@
                name="user-comment" id="user-comment"
                rows="10" placeholder="Введите текст"></textarea>
              </div>
-             <div class="form-field">
-               <input id="term-condition" type="checkbox" name="term-condition">
-               <label class="form-term-condition" for="term-condition">Соглашаюсь с рассылкой и принимаю  <a href="" class="term-contract">Условия договора</a> </label>
-             </div>
-              <button class="form-field-button" type="submit">Отправить</button>
+             <label class="form-checkbox" >
+               <input class="checkbox" type="checkbox" name="checkbox">
+               <!-- <svg class="icon" aria-hidden="true">
+                  <use href="./img/sprite.svg#icon-rectangel">
+                  </use>
+                  <use href="./img/sprite.svg#icon-check">
+                  </use>
+               </svg> -->
+             
+              Соглашаюсь с рассылкой и принимаю  <a href="" class="term-contract">Условия договора</a> 
+            </label>
+              
+            <button class="form-field-button" type="submit">Отправить</button>
             </form>
          </div> 
          
